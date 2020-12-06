@@ -5,6 +5,12 @@ import { withAuthenticator } from 'aws-amplify-react'
 import Amplify, { Auth } from 'aws-amplify';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Home} from './components/Home';
+import {About} from './components/About';
+import {Route, BrowserRouter as Router} from "react-router-dom";
+import {Service} from './components/Service';
+import {Contact} from './components/Contact';
 
 class App extends Component {
   render() {
